@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeria de Fotos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📸 Galeria de Fotos Aleatórias</h1>
+  </header>
+
+  <!-- Formulário de upload -->
+  <section class="upload-area">
+    <form id="form-upload">
+      <input type="file" id="input-arquivo" accept="image/*" required />
+      <button type="submit">Enviar foto</button>
+    </form>
+  </section>
+
+  <!-- Botão para mostrar uma foto aleatória em destaque -->
+  <section class="aleatoria-area">
+    <button id="btn-aleatoria">🎲 Mostrar foto aleatória</button>
+    <div id="foto-destaque"></div>
+  </section>
+
+  <!-- Onde todas as fotos aparecem, em grade -->
+  <section>
+    <h2>Todas as fotos</h2>
+    <div id="galeria" class="galeria"></div>
+  </section>
+
+  <!-- Nosso JavaScript, carregado por último -->
+  <script src="js/script.js"></script>
+</body>
+</html>
